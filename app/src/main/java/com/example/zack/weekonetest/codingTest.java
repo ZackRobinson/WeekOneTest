@@ -84,8 +84,8 @@ public class codingTest {
     //An Armstrong number of three digit is a number whose sum of cubes of its digit is equal to its number.
     //  For example 153 is an Armstrong number of 3 digit because 1^3+5^3+3^3 or 1+125+27=153
     public static boolean testArmstrongNum(String num) {
-        int power = num.length() + 1;
-        int value = Integer.getInteger(num);
+        int power = num.length();
+        int value = Integer.getInteger(String.valueOf(num));
         int a = Integer.getInteger(String.valueOf(num.charAt(0)));
         int b = (int) num.charAt(1);
         int c = (int) num.charAt(2);
